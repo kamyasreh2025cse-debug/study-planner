@@ -9,8 +9,20 @@ for i in range(n):
     subjects.append(sub)
     hours.append(hr)
 
-print("\nYour Study Plan:")
-for i in range(n):
-    print(subjects[i], "->", hours[i], "hours")
+# Combine and sort subjects based on hours (priority)
+combined = list(zip(subjects, hours))
+combined.sort(key=lambda x: x[1], reverse=True)
 
-print("\nFocus more on subjects with higher hours!")
+print("\n📚 Optimized Study Plan:")
+total_hours = 0
+
+for sub, hr in combined:
+    print(sub, "->", hr, "hours")
+    total_hours += hr
+
+print("\nTotal study time:", total_hours, "hours")
+
+if total_hours > 6:
+    print("⚠️ Take breaks between study sessions!")
+else:
+    print("✅ Manageable schedule, stay consistent!")
