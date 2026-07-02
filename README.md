@@ -20,7 +20,7 @@ A Python-based application that helps students generate an optimized study sched
    cd study-planner
 3. Run the program:
    python study_planner.py
-   
+```
    ## 🖥 Sample Output
 Enter number of subjects: 3
 Enter subject name: Math
@@ -32,12 +32,13 @@ Optimized Study Plan:
 Math - 2 hours
 Science - 1.5 hours
 English - 1 hour
-
+```
+```
    ## 📂 Project Structure
 study-planner/
 │── study_planner.py
 │── README.md
-
+```
 ## 🚀 Future Enhancements
 - Add GUI using Tkinter  
 - Store study plans in a file  
